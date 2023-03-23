@@ -1,0 +1,32 @@
+$color-1: black;
+$color-2: #eeeeee;
+$color-3: rgb(96, 78, 78);
+$color-4: rgba(0, 0, 0, 0.226);
+$color-5: rgb(206, 206, 206);
+$color-6: rgb(143, 142, 142);
+
+@font-face {
+  font-family: font-1;
+  src: url(../styles/fonts/Roboto-Bold.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "font-1", sans-serif;
+}
+
+body li {
+  list-style-type: none;
+}
+
+body a {
+  text-decoration: none;
+  color: $color-1;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

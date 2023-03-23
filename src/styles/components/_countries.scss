@@ -1,0 +1,51 @@
+.countries {
+  display: flex;
+  flex-direction: column;
+
+  .continentSelector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .continentName {
+      display: flex;
+      margin-bottom: 15px;
+      font-size: 1.3em;
+
+      @media screen and (max-width: 767px) {
+        font-size: 1em;
+      }
+
+      li {
+        margin-right: 25px;
+
+        @media screen and (max-width: 767px) {
+          margin-right: 5px;
+        }
+      }
+    }
+
+    button {
+      width: 200px;
+      height: 50px;
+      border-radius: 5px;
+      background-color: $color-3;
+      color: $color-2;
+      font-size: 1.3em;
+
+      @media screen and (max-width: 767px) {
+        width: 100px;
+        height: 30px;
+        font-size: 1.1em;
+      }
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+  }
+}

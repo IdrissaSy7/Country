@@ -1,0 +1,21 @@
+.navigation {
+  background-color: $color-3;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ul {
+    display: flex;
+
+    li {
+      margin-right: 40px;
+      font-size: 2em;
+      color: $color-2;
+
+      @media screen and (max-width: 767px) {
+        font-size: 1em;
+      }
+    }
+  }
+}
