@@ -12,6 +12,8 @@
       display: flex;
       margin-bottom: 15px;
       font-size: 1.3em;
+      position: relative;
+      height: 150px;
 
       @media screen and (max-width: 767px) {
         font-size: 1em;
@@ -39,6 +41,11 @@
       background-color: $color-3;
       color: $color-2;
       font-size: 1.3em;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
 
       @media screen and (max-width: 767px) {
         width: 100px;
@@ -47,8 +54,6 @@
       }
     }
   }
-
-  
 
   ul {
     display: flex;
