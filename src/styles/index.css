@@ -1,0 +1,244 @@
+@font-face {
+  font-family: font-1;
+  src: url(../styles/fonts/Roboto-Bold.ttf);
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "font-1", sans-serif;
+}
+
+body li {
+  list-style-type: none;
+}
+
+body a {
+  text-decoration: none;
+  color: black;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  font-size: 6em;
+  color: #604e4e;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+.countries {
+  display: flex;
+  flex-direction: column;
+}
+.countries .continentSelector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.countries .continentSelector .continentName {
+  display: flex;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+  position: relative;
+  height: 150px;
+}
+@media screen and (max-width: 767px) {
+  .countries .continentSelector .continentName {
+    font-size: 1em;
+  }
+}
+.countries .continentSelector .continentName li {
+  margin-right: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .countries .continentSelector .continentName li {
+    margin-right: 10px;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.countries .continentSelector button {
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #604e4e;
+  color: #eeeeee;
+  font-size: 1.3em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+@media screen and (max-width: 767px) {
+  .countries .continentSelector button {
+    width: 100px;
+    height: 30px;
+    font-size: 1.1em;
+  }
+}
+.countries ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.card {
+  margin: 5px;
+  text-align: center;
+  width: 300px;
+  height: 250px;
+}
+.card img {
+  width: 250px;
+  height: 150px;
+  box-shadow: 0px 0px 5px black;
+}
+.card h3 {
+  color: black;
+  background-color: #eeeeee;
+  border-radius: 20px;
+}
+
+.imageCountry {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.imageCountry img {
+  width: 100%;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.fa-solid.fa-arrow-left {
+  position: absolute;
+  top: 0;
+  color: #eeeeee;
+  font-size: 2.5em;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+.fa-solid.fa-arrow-left:hover {
+  background-color: rgba(0, 0, 0, 0.226);
+}
+
+.countryContent {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 5px double black;
+}
+.countryContent .countryInfos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.countryContent .countryInfos p {
+  width: 400px;
+  border: 1px solid black;
+  box-shadow: inset 10px 0px 5px rgb(143, 142, 142);
+  padding: 15px;
+  font-size: 1.2em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+@media screen and (max-width: 767px) {
+  .countryContent .countryInfos p {
+    width: 90%;
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 0px;
+  }
+}
+.countryContent .countryInfos p li {
+  margin-top: 10px;
+}
+
+.navigation {
+  background-color: #604e4e;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navigation ul {
+  display: flex;
+}
+.navigation ul li {
+  margin-right: 40px;
+  font-size: 2em;
+  color: #eeeeee;
+}
+@media screen and (max-width: 767px) {
+  .navigation ul li {
+    font-size: 1.5em;
+  }
+}
+
+.collapse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.collapse .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.collapse h3,
+.collapse content {
+  border-radius: 10px;
+  width: 400px;
+}
+@media screen and (max-width: 767px) {
+  .collapse h3,
+  .collapse content {
+    width: 300px;
+  }
+}
+.collapse h3 {
+  padding: 15px;
+  background-color: rgb(143, 142, 142);
+  color: #eeeeee;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid rgba(0, 0, 0, 0.226);
+}
+.collapse h3 img {
+  width: auto;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.about {
+  display: flex;
+  margin: 15px;
+  font-size: 1.3em;
+}/*# sourceMappingURL=index.css.map */
