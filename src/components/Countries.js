@@ -9,18 +9,6 @@ const Flags = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    //   axios
-    //     .get("https://restcountries.com/v3.1/all")
-    //     // .then((res) => setData(res.data));
-    //     .then(function (response) {
-    //       setIsLoading(false);
-    //       setData(response.data);
-    //     })
-    //     .catch(function (error) {
-    //       console.error(error);
-    //     });
-    // }, []);
-
     const options = {
       method: "GET",
       url: "https://restcountries.com/v3.1/all",
